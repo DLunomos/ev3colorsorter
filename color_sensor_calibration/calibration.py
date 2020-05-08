@@ -13,7 +13,7 @@ color_sensor = ColorSensor(Port.S3) #Initializes then
 assert color_sensor #checks the color and touch sensor
 speaker.beep(frequency = 670, duration = 100)
 
-color_list = DataLog(name="color_list", extension="txt")
+color_list = DataLog("red","green","blue","color",name="color_list", extension="csv", Timestamp=False, append=True)
 
 # This loop runs until you press the down button, 
 # waiting for the user to input a colored brick 
